@@ -1,6 +1,7 @@
 body {
 	margin:0;
 	text-align:center;	
+	font-family:Temporarium;
 }
 
 #container {
@@ -13,8 +14,20 @@ button {
     height: 200px;
     width: 200px;
     border-radius: 200px;
-    border: 2px solid #000;
+    border: 5px solid #000;
     margin:20px;
+    font-family:Combo;
+    font-size:30px;
+}
+
+a button {
+	-webkit-transition:background 0.3s ease-in;
+	-webkit-transition:border 0.5s ease-in;
+}
+
+a:hover button {
+	border: 2px solid #000;
+	background:#6cf;
 }
 
 footer {
