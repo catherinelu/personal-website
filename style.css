@@ -1,90 +1,65 @@
-html {
-	/* Set the background */
-	background: url('images/bg.jpg') no-repeat center center fixed; 
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;	
+/* General */
+html, body {
+	margin:0;
+	padding:0;
+	height:2000px;
 }
 
 body {
-	margin:0;
-	text-align:center;	
-	font-family:Temporarium;
+	background:#29ABE1;
 }
 
-#container {
-	width:100%;	
-	margin:0 auto;
-	vertical-align:middle;
-}
-
-button {
-    height: 200px;
-    width: 200px;
-    border-radius: 200px;
-    border: 5px solid #000;
-    margin:20px;
-    font-family:Combo;
-    font-size:30px;
-    background:#71A5D9;
-   	filter:alpha(opacity=60); /* IE */
-    -moz-opacity:0.6; /* Mozilla */
-    opacity: 0.6; /* CSS3 */
-}
-
-a button {
-	-webkit-transition:background 0.7s ease-in;
-	-webkit-transition:border 0.5s ease-in;
-}
-
-a:hover button {
-	cursor:pointer;
-	border: 2px solid #000;
-	background:#5393D4;
-}
-
-/* BEGIN page transition CSS */
-
-.panel{
-    min-width: 100%;
-    height: 98%;
-    overflow-y: auto;
-    overflow-x: hidden;
-    margin-top: -150%;
-    position: absolute;
-    background: #000;
-    box-shadow: 0px 4px 7px rgba(0,0,0,0.6);
-    z-index: 2;
-    -webkit-transition: all .8s ease-in-out;
-    -moz-transition: all .8s ease-in-out;
-    -o-transition: all .8s ease-in-out;
-    transition: all .8s ease-in-out;
-}
-
-.panel:target{
-    margin-top: 0%;
-    padding-top: 0;
-    background-color: #70E0D5;
-}
-
-#home {
-    position: absolute;
-    left:50%;
-    margin-left:-365px;
-}
-
-/* END page transition CSS */
-
-footer {
-	position:absolute;
-	bottom:0;
+/* Sky */
+#sky {
+	height:1000px;
 	width:100%;
-	height:20px;  /* Height of the footer */
-	padding:10px;
-	text-align:left;
+	background:#A0DFFA;
 }
 
-.footer {
-	float:bottom;
+#cloud1 {
+	position:absolute;
+	top:50px;
+	right:-20px;
+}
+
+#cloud2 {
+	position:absolute;
+	top:10px;
+	left:-200px;
+	z-index:10;	
+}
+
+#cloud3 {
+	position:absolute;
+	top:300px;
+	right:100px;	
+}
+
+#cloud4 {
+	position:absolute;
+	top:400px;
+	left:10px;
+}
+
+/* Water */
+#water-back {
+	width:100%;
+	height:84px;
+	background-image:url(images/water-back.png);
+	background-repeat:repeat-x;
+	z-index:20;
+	position:absolute;
+	top:980px;
+	left:-20px;
+}
+
+#water-front {
+	width:110%;
+	height:158px;
+	background-image:url(images/water-front.png);
+	background-repeat:repeat-x;	
+	z-index:30;
+	position:absolute;
+	top:990px;
+	left:-20px;
 }
