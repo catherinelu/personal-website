@@ -11,6 +11,7 @@ body {
 
 /* Sky */
 #sky {
+	left:0px;
 	height:1000px;
 	width:100%;
 	background:#A0DFFA;
@@ -44,22 +45,116 @@ body {
 /* Water */
 #water-back {
 	width:100%;
-	height:84px;
-	background-image:url(images/water-back.png);
+	height:100px;
+	background-image:url(images/water-back-1.5x.png);
 	background-repeat:repeat-x;
 	z-index:20;
 	position:absolute;
-	top:980px;
+	top:960px;
 	left:-20px;
+	-webkit-animation: water-back-animation 3s infinite ease-in-out;
+	-moz-animation: water-back-animation 3s infinite ease-in-out;
+	-o-animation: water-back-animation 3s infinite ease-in-out;
+	-ms-animation: water-back-animation 3s infinite ease-in-out;
+	animation: water-back-animation 3s infinite ease-in-out;
 }
 
 #water-front {
 	width:110%;
-	height:158px;
-	background-image:url(images/water-front.png);
+	height:100px;
+	background-image:url(images/water-front-1.5x.png);
 	background-repeat:repeat-x;	
 	z-index:30;
 	position:absolute;
-	top:990px;
-	left:-20px;
+	top:970px;
+	left:-40px;
+	-webkit-animation: water-front-animation 2s infinite ease-in-out;
+	-moz-animation: water-front-animation 2s infinite ease-in-out;
+	-o-animation: water-front-animation 2s infinite ease-in-out;
+	-ms-animation: water-front-animation 2s infinite ease-in-out;
+	animation: water-front-animation 2s infinite ease-in-out;
 }
+
+/* ---------- */
+/* ANIMATIONS */
+/* ---------- */
+
+/* Web-kit Animations */
+	/* Water */
+	@-webkit-keyframes water-back-animation {
+    0%   {top: 960px; left: -20px;}
+    25%  {top: 958px; left: -22px;}
+    70%  {top: 962px; left: -24px;}
+    100% {top: 959px; left: -20px;}
+	}
+	
+	@-webkit-keyframes water-front-animation {
+    0%   {top: 970px; left: -40px;}
+    25%  {top: 968px; left: -42px;}
+    70%  {top: 972px; left: -44px;}
+    100% {top: 969px; left: -40px;}
+	}
+	
+/* FireFox Animations */
+	/* Water */
+	@-moz-keyframes water-back-animation {
+    0%   {top: 960px; left: -20px;}
+    25%  {top: 958px; left: -22px;}
+    70%  {top: 962px; left: -24px;}
+    100% {top: 959px; left: -20px;}
+	}
+	
+	@-moz-keyframes water-front-animation {
+    0%   {top: 970px; left: -40px;}
+    25%  {top: 968px; left: -42px;}
+    70%  {top: 972px; left: -44px;}
+    100% {top: 969px; left: -40px;}
+	}
+	
+/* Opera Animations */
+	/* Water */
+	@-o-keyframes water-back-animation {
+    0%   {top: 960px; left: -20px;}
+    25%  {top: 958px; left: -22px;}
+    70%  {top: 962px; left: -24px;}
+    100% {top: 959px; left: -20px;}
+	}
+	
+	@-o-keyframes water-front-animation {
+    0%   {top: 970px; left: -40px;}
+    25%  {top: 968px; left: -42px;}
+    70%  {top: 972px; left: -44px;}
+    100% {top: 969px; left: -40px;}
+	}
+
+/* IE Animations */
+	/* Water */
+	@-ms-keyframes water-back-animation {
+    0%   {top: 960px; left: -20px;}
+    25%  {top: 958px; left: -22px;}
+    70%  {top: 962px; left: -24px;}
+    100% {top: 959px; left: -20px;}
+	}
+	
+	@-ms-keyframes water-front-animation {
+    0%   {top: 970px; left: -40px;}
+    25%  {top: 968px; left: -42px;}
+    70%  {top: 972px; left: -44px;}
+    100% {top: 969px; left: -40px;}
+	}
+	
+/* Animations */
+	/* Water */
+	@keyframes water-back-animation {
+    0%   {top: 960px; left: -20px;}
+    25%  {top: 958px; left: -22px;}
+    70%  {top: 962px; left: -24px;}
+    100% {top: 959px; left: -20px;}
+	}
+	
+	@keyframes water-front-animation {
+    0%   {top: 970px; left: -40px;}
+    25%  {top: 968px; left: -42px;}
+    70%  {top: 972px; left: -44px;}
+    100% {top: 969px; left: -40px;}
+	}

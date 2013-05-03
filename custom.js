@@ -24,8 +24,8 @@ $(window).scroll(function() {
 
 /* Ensure the water goes to the end of the screen */
 var waterFunction = function() {
-	$("#water-back").css("width", ($(window).width() + 20) + "px");
-	$("#water-front").css("width", ($(window).width() + 20) + "px");
+	$("#water-back").css("width", ($(window).width() + 30) + "px");
+	$("#water-front").css("width", ($(window).width() + 50) + "px");
 }
 
 $(document).ready(waterFunction);
