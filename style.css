@@ -2,7 +2,7 @@
 html, body {
 	margin:0;
 	padding:0;
-	height:2000px;
+	height:1700px;
 }
 
 body {
@@ -73,6 +73,39 @@ body {
 	-o-animation: water-front-animation 2s infinite ease-in-out;
 	-ms-animation: water-front-animation 2s infinite ease-in-out;
 	animation: water-front-animation 2s infinite ease-in-out;
+}
+
+/* Content Bubbles */
+#content {
+	width:850px;
+	margin:0 auto;
+	vertical-align:middle;
+}
+
+button {
+    height: 200px;
+    width: 200px;
+    border-radius: 200px;
+    border: 5px solid #000;
+    margin:40px;
+    margin-top:250px;
+    font-family:Combo;
+    font-size:30px;
+    background:#FFF;
+   	filter:alpha(opacity=60); /* IE */
+    -moz-opacity:0.6; /* Mozilla */
+    opacity: 0.6; /* CSS3 */
+}
+
+a button {
+	-webkit-transition:background 0.7s ease-in;
+	-webkit-transition:border 0.5s ease-in;
+}
+
+a:hover button {
+	cursor:pointer;
+	border: 2px solid #000;
+	background:#5393D4;
 }
 
 /* ---------- */
