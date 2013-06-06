@@ -156,3 +156,19 @@ label.error {
 	border-radius:8px;
 	padding:0px 4px 4px 4px;
 }
+
+#results {
+	white-space:nowrap;
+	text-style:bold;
+	color:#519457;
+	-webkit-border-radius:8px;
+	-moz-border-radius:8px; 
+	border-radius:8px;
+	padding:0px 4px 4px 4px;
+}
+
+/* Footer CSS */
+#footer {
+	color:black;
+	font-size:14px;
+}
