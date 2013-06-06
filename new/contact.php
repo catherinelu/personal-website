@@ -15,16 +15,9 @@ $headers .= 'Reply-To: '.$field_email."\r\n";
 
 $mail_status = mail($mail_to, $subject, $body_message, $headers);
 
-if ($mail_status) { ?>
-	<script language="javascript" type="text/javascript">
-		alert('Email sent!');
-	</script>
-<?php
-}
-else { ?>
-	<script language="javascript" type="text/javascript">
-		alert('Message failed to send.');
-	</script>
-<?php
+if ($mail_status) {
+	print "Email successfully sent!";
+} else {
+	print "Email did not properly send. Please try again.";
 }
 ?>

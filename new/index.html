@@ -10,6 +10,7 @@
 	<link href="style.css" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ribeye+Marrow|Roboto:300,700,400italic">
 	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+	<script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery.validate/1.7/jquery.validate.min.js"></script>
 	<!-- Add fancyBox -->
 	<link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.4" type="text/css" media="screen" />
 	<script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.4"></script>
@@ -33,13 +34,13 @@
 	<p><h1>About Me</h1>Hi! I'm Catherine, B.S. '14 and M.S. '15 candidate in Computer Science (CS) at Stanford. I'm interested in the intersection between health and technology (software specifically). The <a target="_blank" href="http://www.nytimes.com/2013/06/02/health/colonoscopies-explain-why-us-leads-the-world-in-health-expenditures.html?smid=pl-share">US leads the world in health expenditures</a> without necessarily better results. I believe technology can change that, and I intend to use my technical skills to tackle this problem in the future.
 	</p>
 	
-	<p>I'm pursuing the biocomputation track for my undergraduate CS degree. My coursework differs from other tracks in that it includes courses in the basic sciences and bioinformatics e.g. algorithms in molecular biology, modeling ontologies to make diagnostic decisions, creating systems for data driven medicine, and translational bioinformatics.
+	<p>I'm pursuing the biocomputation track for my undergraduate CS degree. My coursework differs from other tracks in that it includes courses in the basic sciences and bioinformatics e.g. learning about algorithms in molecular biology, modeling ontologies to make diagnostic decisions, creating systems for data driven medicine, and pursuing team projects in translational bioinformatics.
 	</p>
 	
 	<p>I'm also working towards a master's degree in CS, dual track in Systems and Artificial Intelligence. I am learning to build robust and efficient large-scale systems, and to gain an understanding in data mining and modeling techniques.
 	</p>
 	
-	<p>When I'm not working on CS projects or schoolwork, I enjoy playing tennis, watching movies, and exploring new places (I went abroad to Oxford spring 2013, my first time in Europe!). I also love animals--here's a picture of the world's most adorable corgi, <a class="fancybox" rel="group" href="images/davy.jpg">Davy</a> (warning: I may be biased).	
+	<p>When I'm not working on CS projects or schoolwork, I enjoy playing tennis, watching movies, and exploring new places (I went abroad to Oxford spring 2013, my first time in Europe!). I also love animals--here's a picture of the world's most adorable corgi, <a class="fancybox" href="images/davy.jpg">Davy</a> (warning: I may be biased).	
 	</p>
 	</div>
 	<!-- /Me -->
@@ -87,17 +88,23 @@
 		<tr>
 			<td></td>
 			<td>229</td>
-			<td>Machine Learning<br>Project: <a href="files/229-Project.pdf" target="_blank">Breast Cancer Prognosis</a></td>
+			<td>Machine Learning<br>
+				Project: <a href="files/229-Project.pdf" target="_blank">Breast Cancer Prognosis</a>
+			</td>
 		</tr>
 		<tr>
 			<td></td>
 			<td>147</td>
-			<td>Introduction to Human-Computer Interaction</td>
+			<td>Introduction to Human-Computer Interaction<br>
+				Project: <a class="fancybox" href="files/147-Project.jpg" target="_blank">Sirona: A Medication Reminder App</a>
+			</td>
 		</tr>
 		<tr>
 			<td></td>
 			<td>377T</td>
-			<td>Behavior Design for Better Health</td>
+			<td>Behavior Design for Better Health<br>
+				Project: <a href="walkingguild/index.php" target="_blank">The Walking Guild: Motivating People to Walk</a>
+			</td>
 		</tr>
 		<tr>
 			<td></td>
@@ -275,24 +282,25 @@
 	<div class="section" id="contact">
 	<h1>Contact Me</h1>
 	<!-- Form -->
-	<form class="form" action="contact.php" method="post">
+	<form name="contact-form" id="contact-form" action="" method="post">
 	<p class="name">
-		<input type="text" name="name" id="name" />
 		<label for="name">Name</label>
+		<input type="text" name="name" id="name" />
 	</p>
 	<p class="email">
+		<label for="email">Email </label>
 		<input type="text" name="email" id="email" />
-		<label for="email">E-mail</label>
 	</p>
 	<p class="text">
 		<textarea name="text"></textarea>
 	</p>
 	<p class="submit">
-		<input type="submit" value="Send" />
+		<input type="submit" value="Submit" />
 	</p>
 	</form>
 	<!-- /Form -->
 	</div>
+	<div id="results"><div>
 	<!-- /Contact -->
 
 </body>

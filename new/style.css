@@ -125,7 +125,7 @@ input:focus, textarea:focus {
 }
 
 .form label { 
-	margin-left: 10px; 
+	margin-right: 10px; 
 }
 
 .submit input {
@@ -141,4 +141,18 @@ input:focus, textarea:focus {
 
 .submit input:hover {
 	background:#7eb9be;	
+}
+
+label.error {
+	margin-left:5px;
+	font-size:16px;
+	font-style:bold;
+	background-color:#EB7575;
+	color:white;
+	width: 250px;
+	display: inline;
+	-webkit-border-radius:8px;
+	-moz-border-radius:8px; 
+	border-radius:8px;
+	padding:0px 4px 4px 4px;
 }

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<!-- saved from url=(0054)http://twitter.github.com/bootstrap/examples/hero.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Stanford Walking Guild</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="http://twitter.github.com/bootstrap/assets/css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+    </style>
+    <link href="http://twitter.github.com/bootstrap/assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="bootstrap/css/bootstrap.min.united.css" rel="stylesheet">
+	<script src="javascript/jquery.js"></script>
+	<script src="javascript/smoothscroll.js"></script>
+  	<style type="text/css"></style></head>
+
+  <body>
+
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="/">Stanford Walking Guild</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="active"><a href="/">Home</a></li>
+              <li><a href="/about.html">About</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="hero-unit">
+      	<h1>Did you know?</h1>
+        <p>Walking 30 minutes a day for 5 days a week can:</p>
+        <ul class="splash-page">
+        <li class="splash-page">lower bad cholesterol</li>
+        <li class="splash-page">raise good cholesterol</li>
+		<li class="splash-page">lower blood pressure</li>
+		<li class="splash-page">reduce risk of, or manage, type 2 diabetes</li>
+		<li class="splash-page">manage your weight</li>
+		<li class="splash-page">improve your mood</li>
+        </ul>
+        Now use our calculator to find out how much you really walk.</p>
+        <p><a class="btn btn-primary btn-large smoothScroll" href="#calculator">Calculate how much I walk »</a></p>
+      </div>
+
+	  <!-- Walking calculator -->
+	  <a name="calculator"></a>
+	  <br>
+	  <div class="calculator">
+	  <form class="form-horizontal well" action="submit-calculator.php" method="post">
+	  <fieldset>
+	  	<legend>Walking Calculator</legend>
+	  	<p>For each text box, give an answer in numbers of minutes a day.</p>
+	  	<div class="control-group">
+		  	<div>
+		  		<label class="control-label">To and from work</label>
+		  		<div class="controls"><input type="text" class="input-small" name="to-from" id="to-from" value="0"></div>
+		  	</div>
+	  	</div>
+	  	<div class="control-group">
+		  	<div>
+		  		<label class="control-label">During work/around campus</label>
+		  		<div class="controls">
+		  			<input type="text" class="input-small" name="work" id="work" value="0">
+		  			<div>Bathroom trips, getting lunch, etc.</div>
+		  		</div>
+		  	</div>
+	  	</div>
+	  	<div class="control-group">
+		  	<div>
+		  		<label class="control-label">Exercise</label>
+		  		<div class="controls"><input type="text" class="input-small" name="exercise" id="exercise" value="0"></div>
+		  	</div>
+	  	</div>
+	  	<div class="control-group">
+		  	<div>
+		  		<label class="control-label">Walking a pet</label>
+		  		<div class="controls"><input type="text" class="input-small" name="pet" id="pet" value="0"></div>
+		  	</div>
+	  	</div>
+	  	<div class="control-group">
+		  	<div>
+		  		<label class="control-label">Errands</label>
+		  		<div class="controls"><input type="text" class="input-small" name="errands" id="errands" value="0"></div>
+		  	</div>
+	  	</div>
+	  	<div class="control-group">
+		  	<div>
+		  		<label class="control-label">Other</label>
+		  		<div class="controls"><input type="text" class="input-small" name="other" id="other" value="0"></div>
+		  	</div>
+	  	</div>
+	    <div class="control-group">
+		  	<div>
+		  		<label class="control-label">Total walking</label>
+		  		<div class="controls">
+		  			<input type="text" class="input-small" name="total" id="total" readonly="readonly" value="0">
+		  		</div>
+		  	</div>
+	  	</div>
+	  	<!-- Ugly javascript, don't judge me -->
+	  	<script>
+		var recalculate = function() {
+  			var toFrom = parseInt($('#to-from').val());
+			// preventing negative values is not working
+  			if (isNaN(toFrom)) {
+  				toFrom = 0;
+  			}
+  			var work = parseInt($('#work').val());
+			// preventing negative values is not working
+  			if (isNaN(work)) {
+  				work = 0;
+  			}
+  			var exercise = parseInt($('#exercise').val());
+  			if (isNaN(exercise)) {
+  				exercise = 0;
+  			}
+   			var pet = parseInt($('#pet').val());
+  			if (isNaN(pet)) {
+  				pet = 0;
+  			}
+  			var errands = parseInt($('#errands').val());
+  			if (isNaN(errands)) {
+  				errands = 0;
+  			}
+  			var other = parseInt($('#other').val());
+  			if (isNaN(other)) {
+  				other = 0;
+  			}
+  			var sum = Number(toFrom + work + exercise + pet + errands + other);
+	  		$('#total').val(sum);	
+  		};
+
+  		$('#to-from').keyup(recalculate);
+    	$('#work').keyup(recalculate);
+    	$('#exercise').keyup(recalculate); 
+    	$('#pet').keyup(recalculate); 
+    	$('#errands').keyup(recalculate); 
+    	$('#other').keyup(recalculate); 
+	  </script>
+	    <div class="form-actions">
+	  		<button type="submit" class="btn btn-primary">Submit</button>
+	  	</div>
+	  </fieldset>
+	  </form>  
+	  </div>
+      <hr>
+
+      <footer>
+      	<!-- If we ever want a copyright in the footer:
+        <p>© Company 2012</p> -->
+      </footer>
+
+    </div> <!-- /container -->
+
+  
+
+</body></html>
