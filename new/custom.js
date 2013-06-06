@@ -1,4 +1,9 @@
 $(document).ready(function() {
+	$(".fancybox").fancybox();
+});
+
+/* To deal with the hiding/unhiding sections. */
+$(document).ready(function() {
 	/* First hide the hidden content on load. */
 	$(".hidden").hide();
 	

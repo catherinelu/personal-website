@@ -10,6 +10,9 @@
 	<link href="style.css" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ribeye+Marrow|Roboto:300,700,400italic">
 	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+	<!-- Add fancyBox -->
+	<link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.4" type="text/css" media="screen" />
+	<script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.4"></script>
 	<script src="custom.js"></script>
 </head>
 <body>
@@ -20,7 +23,6 @@
 		<li><a href="#me">Me</a></li>
 		<li><a id="work-button" href="#work">Work</a></li>
 		<li><a href="#contact">Contact</a></li>
-		<li><a href="CatherineLuResume.pdf">Resume</a></li>
 	</ul>
 	<!-- /Navigation -->
 	</div>
@@ -28,29 +30,33 @@
 	
 	<!-- Me -->
 	<div class="section" id="me">
-	<p><h1>About Me</h1>Hi! I'm Catherine, B.S. '14 and M.S. '15 candidate in Computer Science (CS) at Stanford. I'm interested in the intersection between health and technology (software specifically). The <a href="http://www.nytimes.com/2013/06/02/health/colonoscopies-explain-why-us-leads-the-world-in-health-expenditures.html?smid=pl-share">US leads the world in health expenditures</a> without necessarily better results. I believe technology can change that, and I intend to use my technical skills to tackle this problem in the future.
+	<p><h1>About Me</h1>Hi! I'm Catherine, B.S. '14 and M.S. '15 candidate in Computer Science (CS) at Stanford. I'm interested in the intersection between health and technology (software specifically). The <a target="_blank" href="http://www.nytimes.com/2013/06/02/health/colonoscopies-explain-why-us-leads-the-world-in-health-expenditures.html?smid=pl-share">US leads the world in health expenditures</a> without necessarily better results. I believe technology can change that, and I intend to use my technical skills to tackle this problem in the future.
 	</p>
 	
 	<p>I'm pursuing the biocomputation track for my undergraduate CS degree. My coursework differs from other tracks in that it includes courses in the basic sciences and bioinformatics e.g. algorithms in molecular biology, modeling ontologies to make diagnostic decisions, creating systems for data driven medicine, and translational bioinformatics.
 	</p>
 	
-	<p>I'm also working towards a master's degree in CS, dual track in Systems and Artificial Intelligence. I am learning to build robust and efficient large-scale systems, and to have a good understanding in data mining and modeling techniques.
+	<p>I'm also working towards a master's degree in CS, dual track in Systems and Artificial Intelligence. I am learning to build robust and efficient large-scale systems, and to gain an understanding in data mining and modeling techniques.
 	</p>
 	
-	<p>When I'm not working on CS projects or schoolwork, I enjoy playing tennis, watching movies, and exploring new places. I also love animals--check out the world's most adorable corgi, Davy (warning: I may be biased).	
+	<p>When I'm not working on CS projects or schoolwork, I enjoy playing tennis, watching movies, and exploring new places (I went abroad to Oxford spring 2013, my first time in Europe!). I also love animals--here's a picture of the world's most adorable corgi, <a class="fancybox" rel="group" href="images/davy.jpg">Davy</a> (warning: I may be biased).	
 	</p>
 	</div>
 	<!-- /Me -->
 	
+	<hr>
+	
 	<!-- Work -->
 	<div class="section" id="work">
 		<!-- Selected Coursework -->
-		<div id="courses"><h1>Work<h1></div>
+		<h1>Work</h1>
+		For up-to-date and complete information, <a href="#contact">contact me</a> for a resume and/or transcript.
+		<br>
+		<br>
 		<b>Selected Coursework</b><br>
-		Below are about half of the courses I've taken at Stanford thus far (updated 6/6/2013).<br>
+		About half of the courses I've taken at Stanford (updated 6/6/2013).<br>
 		<a class="click-to-view" href="#" onclick="return false">Click to view</a>
 		<div class="hidden">
-		<p>
 		<table>
 		<!-- CS Section -->
 		<tr>
@@ -165,7 +171,6 @@
 			<td>BIOE 273</td>
 			<td>Biodesign for Mobile Health</td>
 		</table>
-		</p>
 		<a class="hide" href="#" onclick="return false">Click to hide</a>
 		</div>
 		<!-- /Selected Coursework -->
@@ -175,15 +180,120 @@
 		<div id="experience">
 		<br>
 		<b>Selected Experience</b>
-		Some of the things I've done outside of school.
+		<br>
+		Some of the things I've done outside of school (updated 6/6/2013).
+		<br>
+		<a class="click-to-view" href="#" onclick="return false">Click to view</a>
+		<!-- Hidden -->
+		<div class="hidden">
+		<table>
+		<!-- Internships -->
+		<tr>
+			<td><b>Internships</b></td>
+			<td>Google Associate Product Manager Intern</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>Google Engineering Practicum Intern</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>Agile Diagnosis Intern</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>Asian Liver Center Intern</td>
+		</tr>
+		<!-- /Internships -->
+		
+		<!-- Work -->
+		<tr>
+			<td><b>Teaching</b></td>
+			<td>CS106 Section Leader</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>Stanford Computer Forum English Tutor</td>
+		</tr>
+		<!-- /Work -->
+		
+		<!-- Research -->
+		<tr>
+			<td><b>Research</b></td>
+			<td>Children's Hospital Oakland Research Institute</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>Institute of Plant Biology</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>Fernald Lab</td>
+		</tr>
+		<!-- /Research -->
+		
+		<!-- Community Service -->
+		<tr>
+			<td><b>Community Service</b></td>
+			<td>Team HBV President</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>she++ Mentor</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>Project Not Alone Study Director</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>Pacific Free Clinic EMR Chair</td>
+		</tr>
+		<!-- /Community Service -->
+		
+		</table>
+		<a class="hide" href="#" onclick="return false">Click to hide</a>
+		</div>
+		<!-- /Hidden -->
 		</div>
 		<!-- /Selected Work Experience -->
 		
 		<!-- Projects -->
-		
+		<div id="projects">
+		<br>
+		<b>Personal Projects</b>
+		<br>
+		Coming soon!
+		</div>
 		<!-- /Projects -->
 	</div>
 	<!-- /Work -->
+	
+	<hr>
+	
+	<!-- Contact -->
+	<div class="section" id="contact">
+	<h1>Contact Me</h1>
+	<!-- Form -->
+	<form class="form" action="contact.php" method="post">
+	<p class="name">
+		<input type="text" name="name" id="name" />
+		<label for="name">Name</label>
+	</p>
+	<p class="email">
+		<input type="text" name="email" id="email" />
+		<label for="email">E-mail</label>
+	</p>
+	<p class="text">
+		<textarea name="text"></textarea>
+	</p>
+	<p class="submit">
+		<input type="submit" value="Send" />
+	</p>
+	</form>
+	<!-- /Form -->
+	</div>
+	<!-- /Contact -->
 
 </body>
 </html>
