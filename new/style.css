@@ -1,81 +1,146 @@
 /* General */
+
 body {
 	margin:0;
 	padding:0;
-	background-image:url(images/bg.jpg);
-	font-family: helvetica, sans-serif; /* Default */
+	/* Default */
+	font-family: 'Roboto', helvetica, sans-serif;
+	font-weight:100;
+	font-size:18px;
 }
 
-::-moz-selection { 
-background-color: #96bca7; 
-color: #ffffff;
-}
-
-::selection {
-background-color: #96bca7;
-color: #ffffff;
-}
-
-/* For the line break */
-hr {
-    border:0;
-    height:2px;
-    background-image:-webkit-linear-gradient(left, rgba(139,127,111,0), rgba(139,127,111,0.75), rgba(139,127,111,0)); 
-    background-image:   -moz-linear-gradient(left, rgba(139,127,111,0), rgba(139,127,111,0.75), rgba(139,127,111,0)); 
-    background-image:    -ms-linear-gradient(left, rgba(139,127,111,0), rgba(139,127,111,0.75), rgba(139,127,111,0)); 
-    background-image:     -o-linear-gradient(left, rgba(139,127,111,0), rgba(139,127,111,0.75), rgba(139,127,111,0)); 
+/* For the scroll to top button. */
+#scrollup{
+    width:40px;
+    height:40px;
+    opacity:0.5;
+    position:fixed;
+    bottom:40px;
+    right:50px;
+    display:none;
+    text-indent:-9999px;
+    background: url('images/icon_top.png') no-repeat;
 }
 
 /* For the header and navigation */
 #header {
-	height:145px;
-	background-image:url(images/header.jpg);
-	background-repeat:repeat-x;
+	display:inline-block;
+	background-color:#F8F8F8;
+	width:100%;
+	box-shadow:0px 0px 10px 0px;
 }
 
+#header p {
+	margin:20px;
+	font-size:40px;
+	font-weight:100;	
+}
+
+/* The following CSS is to get even spacing: */
 #navigation {
-	height:145px;
-	position:relative;
-	top:67px;
-  	white-space:nowrap;
+	text-align: justify;
+    -ms-text-justify: distribute-all-lines;
+    text-justify: distribute-all-lines;	
 }
 
-#navigation li {
-	float:left;
-	list-style: none;
-	margin-right:1em;
-	font-family:'Ribeye Marrow';
-	font-size: 35px;
-    padding: 12px 80px 12px 30px;
-    margin-left:-40px;
+.nav-button {
+	margin:20px;
+	vertical-align: top;
+    display: inline-block;
+    *display: inline;
+    zoom: 1
 }
 
-#navigation li a {
-	color: #96bca7;
+.stretch {
+    width: 100%;
+    display: inline-block;
+    font-size: 0;
+    line-height: 0
+}
+/* End code for even spacing. */
+
+#about-button {
+	background-color:#F7887C;
+}
+
+#about-button:hover {
+	background-color:#F76454;
+}
+
+#work-button {
+	background-color:#FFD666;
+}
+
+#work-button:hover {
+	background-color:#FFDE24;
+}
+
+#contact-button {
+	background-color:#86D99C;
+}
+
+#contact-button:hover {
+	background-color:#54D68A;
+}
+
+.nav-button a {
+	color:#363636;
     text-decoration:none;
-    float: left;
+    height:100%;
+    width:250px;
 }
 
-#navigation li a:hover {
-	color: #7eb9be;
-	border-bottom:4px dotted #7eb9be;
+.nav-button a:hover {
+	color:black;	
+}
+
+.nav-button-content {
+	font-family:'Roboto Slab', serif;
+	font-weight:100;
+	font-size:60px;
+	padding-top:80px;
+	width:250px;
+	height:70px;
 }
 
 h1 {
-	font-family:'Ribeye Marrow';
-	font-size:30px;
+	font-family:'Roboto Slab', serif;
+	font-size:40px;
+	font-weight:100;
+}
+
+
+/* For the about section. */
+#me {
+	margin:0;
+	background-color:#F5D6D3;
+	box-shadow:0px 0px 10px 0px;
+}
+
+/* For the work section. */
+#work {
+	margin:0;
+	background-color:#FFF3D1;
+	box-shadow:0px 0px 10px 0px;
+}
+
+/* For the contact section. */
+#contact {
+	margin:0;
+	background-color:#B5EBC3;
+	box-shadow:0px 0px 10px 0px;
 }
 
 /* For the content */
 .section {
-	padding:30px;
+	padding:15px 30px 30px 30px;
 	font-family:'Roboto';
 	font-size:18px;
 	color:#3D3D3D;
 }
 
 .section a {
-	background-color:#DBC39A;
+	background-color:#FDFFB8;
 	color:#3D3D3D;
 	-webkit-border-radius:6px;
 	-moz-border-radius:6px; 
@@ -87,7 +152,6 @@ h1 {
 
 .section a:hover {
 	color:#7eb9be;
-	background-color:#FDFFB8;
 }
 
 td {
@@ -105,8 +169,8 @@ input, textarea {
 	border: solid 1px #E5E5E5;
 	outline: 0;
 	width: 200px;
-	background: -webkit-gradient(linear, left top, left 25, from(#FFFFFF), color-stop(4%, #EEEEEE), to(#FFFFFF));
-	background: -moz-linear-gradient(top, #FFFFFF, #EEEEEE 1px, #FFFFFF 25px);
+	background: -webkit-gradient(linear, left top, left 25, from(#EDEDED), color-stop(4%, #EEEEEE), to(#EDEDED));
+	background: -moz-linear-gradient(top, #EDEDED, #EEEEEE 1px, #EDEDED 25px);
 	box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
 	-moz-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
 	-webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
@@ -126,7 +190,11 @@ input:focus, textarea:focus {
 }
 
 .form label { 
-	margin-right: 10px; 
+	margin-right: 10px;
+}
+
+#email-label {
+	margin-right:4px;	
 }
 
 .submit input {
@@ -141,7 +209,8 @@ input:focus, textarea:focus {
 }
 
 .submit input:hover {
-	background:#7eb9be;	
+	background:#7eb9be;
+	cursor:pointer;	
 }
 
 label.error {
@@ -172,4 +241,5 @@ label.error {
 #footer {
 	color:black;
 	font-size:14px;
+	margin-top:15px;
 }

@@ -3,6 +3,36 @@ $(document).ready(function() {
 	$(".fancybox").fancybox();
 });
 
+/* Everything to do with scrolling. */
+$(document).ready(function() {
+	/* To have a smooth scroll. */
+	$('a[href^="#"]').on('click',function (e) {
+	    e.preventDefault();
+	    var target = this.hash,
+	    $target = $(target);
+	    $('html, body').stop().animate({
+	        'scrollTop': $target.offset().top
+	    }, 900, 'swing', function () {
+	        window.location.hash = target;
+	    });
+	});
+	
+	/* To show the scroll button. */
+	$(window).scroll(function() {
+		if ($(this).scrollTop() > 100) {
+			$('#scrollup').fadeIn();
+		} else {
+			$('#scrollup').fadeOut();
+		}
+	});
+
+	/* To scroll to the top if the scroll button is pressed. */
+	$('#scrollup').click(function(){
+		$("html, body").animate({ scrollTop: 0 }, 600);
+		return false;
+	});
+});
+
 /* To deal with the hiding/unhiding sections. */
 $(document).ready(function() {
 	/* First hide the hidden content on load. */

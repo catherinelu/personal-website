@@ -8,7 +8,7 @@
 	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 	<link href="style.css" rel="stylesheet" type="text/css">
-	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ribeye+Marrow|Roboto:300,700,400italic">
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic|Roboto+Slab:100' rel='stylesheet' type='text/css'>
 	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
 	<script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery.validate/1.7/jquery.validate.min.js"></script>
 	<!-- Google Analytics code -->
@@ -27,21 +27,28 @@
 	<script src="custom.js"></script>
 </head>
 <body>
+	<!-- Scroll up button -->
+	<a href="" id="scrollup">Scroll</a>
+	
 	<!-- Header -->
 	<div id="header">
+	<p>Hi! I'm Catherine, B.S. '14 and M.S. '15 candidate in Computer Science (CS) at Stanford.</p>
 	<!-- Navigation -->
-	<ul id="navigation">
-		<li><a href="#me">About</a></li>
-		<li><a id="work-button" href="#work">Work</a></li>
-		<li><a href="#contact">Contact</a></li>
-	</ul>
+	<div id="navigation">
+		<div class="nav-button" id="about-button"><a href="#me"><div class="nav-button-content">about</div></a></div>
+		<div class="nav-button" id="work-button"><a href="#work"><div class="nav-button-content">work</div></a></div>
+		<div class="nav-button" id="contact-button"><a href="#contact"><div class="nav-button-content">contact</div></a></div>
+		<span class="stretch"></span>
+	</div>
 	<!-- /Navigation -->
 	</div>
 	<!-- /Header -->
 	
 	<!-- Me -->
-	<div class="section" id="me">
-	<p><h1>About Me</h1>Hi! I'm Catherine, B.S. '14 and M.S. '15 candidate in Computer Science (CS) at Stanford.</p>
+	<div id="me">
+	<div class="section">
+	<h1>about me</h1>
+	<p>Though born in Lincoln, Nebraska, I consider myself a Bay Area native and love sunny California. I discovered CS partway through freshman year and have been hooked ever since.</p>
 	
 	<p>I'm pursuing the biocomputation track for my undergraduate CS degree. My coursework differs from other tracks in that it includes courses in the basic sciences and bioinformatics e.g. learning about algorithms in molecular biology, modeling ontologies to make diagnostic decisions, creating systems for data driven medicine, and pursuing team projects in translational bioinformatics. I'm interested in the intersection between health and technology (software specifically). The <a target="_blank" href="http://www.nytimes.com/2013/06/02/health/colonoscopies-explain-why-us-leads-the-world-in-health-expenditures.html?smid=pl-share">US leads the world in health expenditures</a> without necessarily better results, and I believe technology can change that. I'm considering using my technical skills to tackle this problem in the future.
 	</p>
@@ -52,20 +59,20 @@
 	<p>When I'm not working on CS projects or schoolwork, I enjoy playing tennis, watching movies, and exploring new places (I went abroad to Oxford spring 2013 - check back later for pictures!). I also love animals--here's a picture of the world's most adorable corgi, <a class="fancybox" href="images/davy.jpg">Davy</a> (warning: I may be biased).	
 	</p>
 	</div>
+	</div>
 	<!-- /Me -->
-	
-	<hr>
-	
+		
 	<!-- Work -->
-	<div class="section" id="work">
+	<div id="work">
+	<div class="section">
 		<!-- Selected Coursework -->
-		<h1>Work</h1>
+		<h1>some of my work</h1>
 		For up-to-date and complete information, <a href="#contact">contact me</a> for a resume and/or transcript.
 		<br>
 		<br>
 		<b>Selected Coursework</b><br>
 		About half of the courses I've taken at Stanford (updated 6/6/2013).<br>
-		<a class="click-to-view" href="#" onclick="return false">Click to view</a>
+		<a class="click-to-view" href="" onclick="return false">Click to view</a>
 		<div class="hidden">
 		<table>
 		<!-- CS Section -->
@@ -187,7 +194,7 @@
 			<td>BIOE 273</td>
 			<td>Biodesign for Mobile Health</td>
 		</table>
-		<a class="hide" href="#" onclick="return false">Click to hide</a>
+		<a class="hide" href="" onclick="return false">Click to hide</a>
 		</div>
 		<!-- /Selected Coursework -->
 		
@@ -199,7 +206,7 @@
 		<br>
 		Some of the things I've done outside of school (updated 6/6/2013).
 		<br>
-		<a class="click-to-view" href="#" onclick="return false">Click to view</a>
+		<a class="click-to-view" href="" onclick="return false">Click to view</a>
 		<!-- Hidden -->
 		<div class="hidden">
 		<table>
@@ -269,7 +276,7 @@
 		<!-- /Community Service -->
 		
 		</table>
-		<a class="hide" href="#" onclick="return false">Click to hide</a>
+		<a class="hide" href="" onclick="return false">Click to hide</a>
 		</div>
 		<!-- /Hidden -->
 		</div>
@@ -284,13 +291,12 @@
 		</div>
 		<!-- /Projects -->
 	</div>
+	</div>
 	<!-- /Work -->
-	
-	<hr>
 	
 	<!-- Contact -->
 	<div class="section" id="contact">
-	<h1>Contact Me</h1>
+	<h1>contact me</h1>
 	<!-- Form -->
 	<form name="contact-form" id="contact-form" action="" method="post">
 	<p class="name">
@@ -298,7 +304,7 @@
 		<input type="text" name="name" id="name" />
 	</p>
 	<p class="email">
-		<label for="email">Email </label>
+		<label for="email" id="email-label">Email</label>
 		<input type="text" name="email" id="email" />
 	</p>
 	<p class="text">
