@@ -46,7 +46,8 @@ hr {
 	margin-right:1em;
 	font-family:'Ribeye Marrow';
 	font-size: 35px;
-    padding: 12px 30px 12px 30px;
+    padding: 12px 80px 12px 30px;
+    margin-left:-40px;
 }
 
 #navigation li a {
@@ -74,8 +75,8 @@ h1 {
 }
 
 .section a {
-	background-color:white;
-	color:#96bca7;
+	background-color:#DBC39A;
+	color:#3D3D3D;
 	-webkit-border-radius:6px;
 	-moz-border-radius:6px; 
 	border-radius:6px;

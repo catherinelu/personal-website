@@ -35,11 +35,11 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          <a class="brand" href="/">Stanford Walking Guild</a>
+          <a class="brand" href="/walkingguild">Stanford Walking Guild</a>
           <div class="nav-collapse collapse">
             <ul class="nav">
-              <li class="active"><a href="/">Home</a></li>
-              <li><a href="/about.html">About</a></li>
+              <li class="active"><a href="/walkingguild">Home</a></li>
+              <li><a href="/walkingguild/about.html">About</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>

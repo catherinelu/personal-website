@@ -53,11 +53,11 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          <a class="brand" href="/">Stanford Walking Guild</a>
+          <a class="brand" href="/walkingguild">Stanford Walking Guild</a>
           <div class="nav-collapse collapse">
             <ul class="nav">
-              <li class="active"><a href="/">Home</a></li>
-              <li><a href="/about.html">About</a></li>
+              <li class="active"><a href="/walkingguild">Home</a></li>
+              <li><a href="/walkingguild/about.html">About</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
@@ -72,7 +72,7 @@
         <p class="splash-page">Most people have no idea how much they walk. Take your best guess, and then use our 10 second walking calculator to find out how much you really walk.</p>
         <br>
         <p class="splash-page" id="form">
-        	<form class="splash-page" action="calculator" method="post">Quick estimate: <input type="text" value="0" class="input-small" id="estimate-box" name="estimate" required="required"> min/day
+        	<form class="splash-page" action="calculator.html" method="post">Quick estimate: <input type="text" value="0" class="input-small" id="estimate-box" name="estimate" required="required"> min/day
         	<button type="submit" class="btn btn-primary btn-large" id="submit-button">Submit</button>
 			</form>
 	  	</p>

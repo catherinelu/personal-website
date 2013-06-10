@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Catherine Lu</title>
+	<meta charset="utf-8">
+	<meta name="Catherine Lu" content="personal website">
+	<!--[if IE]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ribeye+Marrow|Roboto:300,700,400italic">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+	<script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery.validate/1.7/jquery.validate.min.js"></script>
+	<!-- Add fancyBox -->
+	<link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.4" type="text/css" media="screen" />
+	<script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.4"></script>
+	<script src="custom.js"></script>
+</head>
+<body>
+<div class="section">
+My apologies! The page you are looking for cannot be found. If you think there is an error, contact me at me@cath.lu.
+</div>
+</body>
+</html>
+
+<!-- 
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
