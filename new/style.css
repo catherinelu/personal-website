@@ -9,6 +9,12 @@ body {
 	font-size:18px;
 }
 
+h1 {
+	font-family:'Roboto Slab', serif;
+	font-size:40px;
+	font-weight:100;
+}
+
 /* For the scroll to top button. */
 #scrollup{
     width:40px;
@@ -36,6 +42,7 @@ body {
 	font-weight:100;	
 }
 
+
 /* The following CSS is to get even spacing: */
 #navigation {
 	text-align: justify;
@@ -44,7 +51,7 @@ body {
 }
 
 .nav-button {
-	margin:20px;
+	margin:10px;
 	vertical-align: top;
     display: inline-block;
     *display: inline;
@@ -59,6 +66,7 @@ body {
 }
 /* End code for even spacing. */
 
+/* Code for the buttons at the top. */
 #about-button {
 	background-color:#F7887C;
 }
@@ -83,11 +91,19 @@ body {
 	background-color:#54D68A;
 }
 
+#blog-button {
+	background-color:#D1B6CF;
+}
+
+#blog-button:hover {
+	background-color:#D9A9D5;
+}
+
 .nav-button a {
 	color:#363636;
     text-decoration:none;
     height:100%;
-    width:250px;
+    width:220px;
 }
 
 .nav-button a:hover {
@@ -97,18 +113,12 @@ body {
 .nav-button-content {
 	font-family:'Roboto Slab', serif;
 	font-weight:100;
-	font-size:60px;
-	padding-top:80px;
-	width:250px;
-	height:70px;
+	font-size:50px;
+	padding-top:60px;
+	width:220px;
+	height:65px;
 }
-
-h1 {
-	font-family:'Roboto Slab', serif;
-	font-size:40px;
-	font-weight:100;
-}
-
+/* End code for buttons at the top. */
 
 /* For the about section. */
 #me {
