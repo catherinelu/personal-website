@@ -1,0 +1,25 @@
+[09-Jul-2013 21:36:05 America/Chicago] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home2/cglu/public_html/projects/geoshare/insert.php on line 4
+[09-Jul-2013 21:43:05 America/Chicago] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home2/cglu/public_html/projects/geoshare/insert.php on line 4
+[09-Jul-2013 21:46:46 America/Chicago] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home2/cglu/public_html/projects/geoshare/insert.php on line 4
+[09-Jul-2013 21:49:33 America/Chicago] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home2/cglu/public_html/projects/geoshare/insert.php on line 4
+[09-Jul-2013 21:51:25 America/Chicago] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home2/cglu/public_html/projects/geoshare/insert.php on line 4
+[09-Jul-2013 22:04:52 America/Chicago] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home2/cglu/public_html/projects/geoshare/insert.php on line 4
+[16-Jul-2013 21:53:20 America/Chicago] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home2/cglu/public_html/projects/geoshare/insert.php on line 4
+[16-Jul-2013 22:18:17 America/Chicago] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home2/cglu/public_html/projects/geoshare/insert.php on line 4
+[22-Jul-2013 20:35:08 America/Chicago] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home2/cglu/public_html/projects/geoshare/insert.php on line 4
+[22-Jul-2013 20:43:01 America/Chicago] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home2/cglu/public_html/projects/geoshare/insert.php on line 4
+[16-Aug-2013 19:33:27 America/Chicago] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'cglu_user'@'50-87-144-217.unifiedlayer.com' (using password: YES) in /home2/cglu/public_html/projects/geoshare/insert.php on line 9
+[16-Aug-2013 19:42:05 America/Chicago] PHP Fatal error:  Call to undefined function springf() in /home2/cglu/public_html/projects/geoshare/insert.php on line 29
+[16-Aug-2013 19:43:29 America/Chicago] PHP Warning:  mysql_query() expects parameter 1 to be string, resource given in /home2/cglu/public_html/projects/geoshare/insert.php on line 36
+[16-Aug-2013 23:22:50 America/Chicago] PHP Warning:  mysql_query() expects parameter 1 to be string, resource given in /home2/cglu/public_html/projects/geoshare/insert.php on line 36
+[16-Aug-2013 23:26:16 America/Chicago] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home2/cglu/public_html/projects/geoshare/insert.php on line 7
+[16-Aug-2013 23:26:34 America/Chicago] PHP Warning:  mysql_query() expects parameter 1 to be string, resource given in /home2/cglu/public_html/projects/geoshare/insert.php on line 38
+[17-Aug-2013 00:14:51 America/Chicago] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, resource given in /home2/cglu/public_html/projects/geoshare/insert.php on line 39
+[18-Aug-2013 00:13:00 America/Chicago] PHP Parse error:  syntax error, unexpected T_CONSTANT_ENCAPSED_STRING in /home2/cglu/public_html/projects/geoshare/index.php on line 96
+[18-Aug-2013 00:13:21 America/Chicago] PHP Parse error:  syntax error, unexpected T_CONSTANT_ENCAPSED_STRING in /home2/cglu/public_html/projects/geoshare/index.php on line 96
+[18-Aug-2013 00:13:23 America/Chicago] PHP Parse error:  syntax error, unexpected T_CONSTANT_ENCAPSED_STRING in /home2/cglu/public_html/projects/geoshare/index.php on line 96
+[18-Aug-2013 00:13:37 America/Chicago] PHP Parse error:  syntax error, unexpected T_CONSTANT_ENCAPSED_STRING in /home2/cglu/public_html/projects/geoshare/index.php on line 96
+[18-Aug-2013 00:13:40 America/Chicago] PHP Warning:  include_once(filter_results.php) [<a href='function.include-once'>function.include-once</a>]: failed to open stream: No such file or directory in /home2/cglu/public_html/projects/geoshare/index.php on line 91
+[18-Aug-2013 00:13:40 America/Chicago] PHP Warning:  include_once() [<a href='function.include'>function.include</a>]: Failed opening 'filter_results.php' for inclusion (include_path='.:/opt/php53/lib/php') in /home2/cglu/public_html/projects/geoshare/index.php on line 91
+[18-Aug-2013 00:14:11 America/Chicago] PHP Warning:  include_once(filter_results.php) [<a href='function.include-once'>function.include-once</a>]: failed to open stream: No such file or directory in /home2/cglu/public_html/projects/geoshare/index.php on line 91
+[18-Aug-2013 00:14:11 America/Chicago] PHP Warning:  include_once() [<a href='function.include'>function.include</a>]: Failed opening 'filter_results.php' for inclusion (include_path='.:/opt/php53/lib/php') in /home2/cglu/public_html/projects/geoshare/index.php on line 91
