@@ -46,16 +46,15 @@ h1 {
 /* The following CSS is to get even spacing: */
 #navigation {
 	text-align: justify;
-    -ms-text-justify: distribute-all-lines;
-    text-justify: distribute-all-lines;	
+  -ms-text-justify: distribute-all-lines;
+  text-justify: distribute-all-lines;	
 }
 
 .nav-button {
 	margin:10px;
 	vertical-align: top;
-    display: inline-block;
-    *display: inline;
-    zoom: 1
+  display: inline-block;
+  zoom: 1
 }
 
 .stretch {
@@ -101,9 +100,9 @@ h1 {
 
 .nav-button a {
 	color:#363636;
-    text-decoration:none;
-    height:100%;
-    width:220px;
+  text-decoration:none;
+  height:100%;
+  width:220px;
 }
 
 .nav-button a:hover {
@@ -115,6 +114,7 @@ h1 {
 	font-weight:100;
 	font-size:50px;
 	padding-top:60px;
+	padding-left: 10px;
 	width:220px;
 	height:65px;
 }
@@ -130,7 +130,7 @@ h1 {
 /* For the work section. */
 #work {
 	margin:0;
-	background-color:#FFF3D1;
+	background-color:rgba(255, 230, 160, 0.65);
 	box-shadow:0px 0px 10px 0px;
 }
 
@@ -146,7 +146,6 @@ h1 {
 	padding:15px 30px 30px 30px;
 	font-family:'Roboto';
 	font-size:18px;
-	color:#3D3D3D;
 }
 
 .section a {
@@ -165,25 +164,40 @@ h1 {
 }
 
 td {
-	padding:5px 15px 5px 15px;
+	padding:5px 15px 5px 0px;
 	vertical-align:top;
+}
+
+td.project-title {
+	min-width: 180px;
+	font-weight: 300;
+}
+
+td.p {
+	padding:0px;
+	margin:0px;
 }
 
 b {
 	font-size:20px;	
 }
 
+#bsd-info {
+	max-width:600px;
+	max-height:100px;
+}
+
 /* For the form. Most of the CSS taken from a CSS form tutorial from http://net.tutsplus.com/ */
 input, textarea { 
-	padding: 9px;
+	padding: 4px;
 	border: solid 1px #E5E5E5;
 	outline: 0;
 	width: 200px;
-	background: -webkit-gradient(linear, left top, left 25, from(#EDEDED), color-stop(4%, #EEEEEE), to(#EDEDED));
-	background: -moz-linear-gradient(top, #EDEDED, #EEEEEE 1px, #EDEDED 25px);
 	box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
 	-moz-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
 	-webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
+	font-size:16px;
+	font-weight:100;
 }
 
 textarea { 
@@ -212,7 +226,7 @@ input:focus, textarea:focus {
 	padding: 9px 15px;
 	background: #96bca7;
 	border: 0;
-	font-size: 14px;
+	font-size: 18px;
 	color: #FFFFFF;
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
@@ -226,9 +240,8 @@ input:focus, textarea:focus {
 label.error {
 	margin-left:5px;
 	font-size:16px;
-	font-style:bold;
-	background-color:#EB7575;
-	color:white;
+	font-weight:300;
+	color:#EB7575;
 	width: 250px;
 	display: inline;
 	-webkit-border-radius:8px;
@@ -245,6 +258,7 @@ label.error {
 	-moz-border-radius:8px; 
 	border-radius:8px;
 	padding:0px 4px 4px 4px;
+	font-weight:300;
 }
 
 /* Footer CSS */

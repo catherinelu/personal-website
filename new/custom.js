@@ -63,13 +63,14 @@ $(document).ready(function() {
 				}
 			},
 			messages: {
-				name: "Please enter your name.",
+				name: "Please enter your name; don't be shy. :)",
 				email: "A valid email will help me get in touch with you.",
 			},
 			submitHandler: function(form) {
 				// do other stuff for a valid form
 				$.post('contact.php', $("#contact-form").serialize(), function(data) {
 					$('#results').html(data);
+					$('.clear-value').val('');
 				});
 			}
 		});
