@@ -16,7 +16,7 @@ $(document).ready(function() {
 	        window.location.hash = target;
 	    });
 	});
-	
+
 	/* To show the scroll button. */
 	$(window).scroll(function() {
 		if ($(this).scrollTop() > 100) {
@@ -37,13 +37,13 @@ $(document).ready(function() {
 $(document).ready(function() {
 	/* First hide the hidden content on load. */
 	$(".hidden").hide();
-	
+
 	/* If click to view, swap visibility of hidden and visible content. */
 	$(".click-to-view").click(function() {
 		$(this).next(".hidden").slideToggle(500);
 		$(this).slideToggle(500);
 	});
-	
+
 	/* If click to hide, swap visibility of hidden and visible content. */
 	$(".hide").click(function() {
 		$(this).parent(".hidden").slideToggle(500);
@@ -63,7 +63,7 @@ $(document).ready(function() {
 				}
 			},
 			messages: {
-				name: "Please enter your name; don't be shy. :)",
+				name: "Please enter your name. :)",
 				email: "A valid email will help me get in touch with you.",
 			},
 			submitHandler: function(form) {
