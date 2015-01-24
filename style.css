@@ -1,283 +1,71 @@
-/* General */
-
 body {
-	margin: 0;
-	padding: 0;
-	/* Default */
 	font-family: 'Roboto', helvetica, sans-serif;
 	font-weight: 300;
 	font-size: 18px;
-	min-width: 1015px;
+	background-color: #f7f4f2;
+	min-width: 850px;
+	margin: 40px 0;
 }
 
 h1 {
 	font-family: 'Roboto Slab', serif;
 	font-size: 40px;
 	font-weight: 300;
+	margin: 40px 0 10px 0;
 }
 
-/* For the scroll to top button. */
-#scrollup{
-    width: 40px;
-    height: 40px;
-    opacity: 0.5;
-    position: fixed;
-    bottom: 40px;
-    right: 50px;
-    display: none;
-    text-indent: -9999px;
-    background: url('images/icon_top.png') no-repeat;
+h2 {
+	font-weight: 500;
+	margin: 10px 0;
 }
 
-/* For the header and navigation */
-#header {
-	display: inline-block;
-	background-color: #F8F8F8;
-	width: 100%;
-	box-shadow: 0px 0px 5px 0px;
-}
-
-#header p {
-	text-align: center;
-	margin: 20px;
-	font-size: 40px;
-	font-weight: 300;
-}
-
-
-/* The following CSS is to get even spacing: */
-#navigation {
-	text-align: justify;
-	-ms-text-justify: distribute-all-lines;
-	text-justify: distribute-all-lines;
-}
-
-.nav-button {
-	margin: 10px;
-	vertical-align: top;
-	display: inline-block;
-	zoom: 1
-}
-
-.stretch {
-    width: 100%;
-    display: inline-block;
-    font-size: 0;
-    line-height: 0
-}
-/* End code for even spacing. */
-
-/* Code for the buttons at the top. */
-#about-button {
-	background-color: #F7887C;
-}
-
-#about-button:hover {
-	background-color: #F76454;
-}
-
-#work-button {
-	background-color: #FFD666;
-}
-
-#work-button:hover {
-	background-color: #FFDE24;
-}
-
-#contact-button {
-	background-color: #86D99C;
-}
-
-#contact-button:hover {
-	background-color: #54D68A;
-}
-
-#blog-button {
-	background-color: #D1B6CF;
-}
-
-#blog-button:hover {
-	background-color: #D9A9D5;
-}
-
-.nav-button a {
-	color: #363636;
-  text-decoration: none;
-  height: 100%;
-  width: 220px;
-}
-
-.nav-button a:hover {
-	color: black;
-}
-
-.nav-button-content {
-	font-family: 'Roboto Slab', serif;
-	font-weight: 300;
-	font-size: 45px;
-	padding-top: 60px;
-	padding-left: 10px;
-	width: 220px;
-}
-/* End code for buttons at the top. */
-
-/* For the about section. */
-#me {
-	margin: 0;
-	background-color: #F5D6D3;
-	box-shadow: 0px 0px 10px 0px;
-}
-
-#me a {
-	background-color: #FFC4B5
-}
-
-#me a:hover {
-	color: #87A7DF;
-}
-
-/* For the work section. */
-#work {
-	margin: 0;
-	background-color: rgba(255, 230, 160, 0.65);
-}
-
-/* For the contact section. */
-#contact {
-	margin: 0;
-	background-color: #B5EBC3;
-	box-shadow: 0px 0px 3px 0px;
-}
-
-/* For the content */
-.section {
-	padding: 15px 30px 30px 30px;
-	font-family: 'Roboto';
-	font-size: 18px;
-}
-
-.section a {
-	background-color: #FDFFB8;
-	color: #3D3D3D;
-	-webkit-border-radius: 6px;
-	-moz-border-radius: 6px;
-	border-radius: 6px;
-	padding: 0px 2px 0px 2px;
+a {
+	color: #2980b9;
 	text-decoration: none;
-	font-size: 17px;
 }
 
-.section a:hover {
-	color: #7eb9be;
+a:hover {
+	color: #2c3e50;
+}
+
+hr {
+	color: #fff;
+}
+
+.main {
+	width: 800px;
+	margin: 0 auto;
+}
+
+h1 {
+	text-align: center;
+}
+
+.outgoing-links {
+	width: 160px;
+	margin: 0 auto;
+}
+
+.outgoing-links div {
+	display: inline-block;
+	margin-right: 5px;
+}
+
+.outgoing-links div:last-child {
+	margin-right: 0px;
+}
+
+.projects, .about-me {
+	margin-top: 40px;
+}
+
+.project-title {
+	font-weight: 500;
+	font-size: 20px;
+	width: 180px;
+	padding-right: 20px;
 }
 
 td {
-	padding: 5px 15px 5px 0px;
-	vertical-align: top;
-}
-
-td.project-title {
-	min-width: 280px;
-	font-weight: 300;
-}
-
-td.p {
-	padding: 0px;
-	margin: 0px;
-}
-
-b {
-	font-size: 20px;
-}
-
-#bsd-info {
-	display: none;
-	width: 600px;
-	height: 40px;
-}
-
-/* For the contact me section. */
-
-#contact .icon {
-	background: none;
-}
-
-/* For the form. Most of the CSS taken from a CSS form tutorial from http://net.tutsplus.com/ */
-input, textarea {
-	padding: 4px;
-	border: solid 1px #E5E5E5;
-	outline: 0;
-	width: 200px;
-	box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
-	-moz-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
-	-webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
-	font-size: 16px;
-	font-weight: 300;
-}
-
-textarea {
-	width: 400px;
-	max-width: 400px;
-	height: 150px;
-	line-height: 150%;
-}
-
-input:hover, textarea:hover,
-input:focus, textarea:focus {
-	border-color: #C9C9C9;
-	-webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px;
-}
-
-.form label {
-	margin-right: 10px;
-}
-
-#email-label {
-	margin-right:4px;
-}
-
-.submit input {
-	width: auto;
-	padding: 9px 15px;
-	background: #96bca7;
-	border: 0;
-	font-size: 18px;
-	color: #FFFFFF;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
-}
-
-.submit input:hover {
-	background: #7eb9be;
-	cursor: pointer;
-}
-
-label.error {
-	margin-left: 5px;
-	font-size: 16px;
-	font-weight: 300;
-	width: 250px;
-	display: inline;
-	-webkit-border-radius: 8px;
-	-moz-border-radius: 8px;
-	border-radius: 8px;
-	padding: 0px 4px 4px 4px;
-}
-
-#results {
-	white-space: nowrap;
-	text-style: bold;
-	color: #519457;
-	-webkit-border-radius: 8px;
-	-moz-border-radius: 8px;
-	border-radius: 8px;
-	padding: 0px 4px 4px 4px;
-	font-weight: 300;
-}
-
-/* Footer CSS */
-#footer {
-	color: black;
-	font-size: 14px;
-	margin-top: 15px;
+	padding: 10px 0;
 }

@@ -8,8 +8,8 @@
 	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 	<link href="style.css" rel="stylesheet" type="text/css">
-	<link href='http://fonts.googleapis.com/css?family=Roboto:300,300italic|Roboto+Slab:300' rel='stylesheet' type='text/css'>
-	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+	<link href='http://fonts.googleapis.com/css?family=Roboto:300,500|Roboto+Slab:300' rel='stylesheet' type='text/css'>
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css" rel="stylesheet">
 	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
 	<script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery.validate/1.7/jquery.validate.min.js"></script>
 	<!-- Google Analytics code -->
@@ -22,146 +22,75 @@
   	ga('create', 'UA-41613059-1', 'cath.lu');
   	ga('send', 'pageview');
 	</script>
-	<!-- Add fancyBox -->
-	<link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.4" type="text/css" media="screen" />
-	<script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.4"></script>
-	<script src="custom.js"></script>
 </head>
 <body>
-	<!-- Scroll up button -->
-	<a href="" id="scrollup">Scroll</a>
-
-	<!-- Header -->
-	<div id="header">
-	<p>Hi! I'm Catherine.</p>
-	<!-- Navigation -->
-	<div id="navigation">
-		<div class="nav-button" id="about-button"><a href="#me"><div class="nav-button-content">about</div></a></div>
-		<div class="nav-button" id="work-button"><a href="#work"><div class="nav-button-content">projects</div></a></div>
-		<div class="nav-button" id="contact-button"><a href="#contact"><div class="nav-button-content">contact</div></a></div>
-		<div class="nav-button" id="blog-button"><a href="http://blog.cath.lu"><div class="nav-button-content">blog</div></a></div>
-		<span class="stretch"></span>
-	</div>
-	<!-- /Navigation -->
-	</div>
-	<!-- /Header -->
-
-	<!-- Me -->
-	<div id="me">
-	<div class="section">
-	<h1>about me</h1>
-	<p>Though born in the midwest, I consider myself a Bay Area native. I discovered CS partway through freshman year and have been hooked ever since.</p>
-
-	<p>I pursued the biocomputation track for my undergraduate CS degree. My coursework differed from other tracks in that it included courses in the basic sciences, AI, and bioinformatics e.g. learning about algorithms in molecular biology, modeling ontologies to make diagnostic decisions, creating systems for data driven medicine, and pursuing team projects in translational bioinformatics. I'm interested in the intersection between health and technology (software specifically). The <a target="_blank" href="http://www.nytimes.com/2013/06/02/health/colonoscopies-explain-why-us-leads-the-world-in-health-expenditures.html?smid=pl-share">US leads the world in health expenditures</a> without necessarily better results, and I believe technology can change that. I'm also very interested in education, which has changed very little in the past century. Do we still need to teach children cursive? Can we personalize education to effectively serve all students, no matter where they fall on the curve? I'm considering using my technical skills to tackle one of these two areas in the future.
-	</p>
-
-	<p>I'm working towards a master's degree in CS, dual track in Artificial Intelligence and Systems. I am learning to build robust and efficient large-scale systems, and gaining a deeper understanding of data mining and modeling techniques. Plus, it's a lot of fun.
-	</p>
-
-	<p>When I'm not working on CS projects or schoolwork, I love playing tennis, watching movies, trying different food, and exploring new places. I also love animals; here's a picture of the world's most adorable corgi, <a class="fancybox" href="images/davy.jpg">Davy</a> (warning: I may be biased).
-	</p>
-
-	</div>
-	</div>
-	<!-- /Me -->
-
-	<!-- Work -->
-	<div id="work">
-	<div class="section">
-		<!-- Selected Coursework -->
-		<h1>selected projects</h1>
-		<!-- Projects -->
-		<div id="projects">
-		<table>
-			<tr>
-				<td class="project-title"><a href="https://scoryst.com" target="_blank">Scoryst</a></td>
-				<td>
-					Scoryst is an online platform for homework and exam grading. Scoryst saves instructors time grading and gives detailed analytics to improve learning outcomes.
-				</td>
-			</tr>
-			<tr>
-				<td class="project-title"><a href="http://www.freefoodstanford.com" target="_blank">Free Food @ Stanford</a></td>
-				<td>
-					Free Food @ Stanford shows events going on around Stanford that provide
-					free food. Using a trained Naive Bayes Multinomial classifier, it analyzes emails from
-					relevant mailing lists and finds emails which announce events with free
-					food. Then, it parses the location, date, time, and content from the emails
-					and automatically posts them to the website.
-				</td>
-			</tr>
-			<tr>
-				<td class="project-title"><a href="files/CS221-Project.pdf" target="_blank">Recognition of Online Handwritten Mathematical Expressions</a></td>
-				<td>
-					For our final project in <a href="http://cs221.stanford.edu" target="_blank">Principles of Artificial Intelligence</a>, my partner <a href="http://stanford.edu/~kvmohan/" target="_blank">Karanveer Mohan</a> and I created a system to change handwritten mathematical formulas and symbols into LaTeX. If you're curious, you can try out our recognition system <a href="http://cs221.herokuapp.com" target="_blank">here</a>.
-				</td>
-			</tr>
-			<tr>
-				<td class="project-title"><a href="http://cs229.stanford.edu/proj2012/LuLiu-BreastCancerPrognosis.pdf" target="_blank">Breast Cancer Prognosis</a></td>
-				<td>
-					For the <a href="http://cs229.stanford.edu" target="_blank">Machine Learning</a> class final project, my partner JJ Liu and I looked into
-					the best ways to predict breast cancer prognosis. We calculated the hazard function based on the known data and trained survival prediction models (Cox Regression and Random Survival Forests) for the best results. </td>
-			</tr>
-			<tr>
-				<td class="project-title"><a class="fancybox" href="files/147-Project.jpg" target="_blank">Sirona: A Medication Reminder App</a></td>
-				<td>
-					Sirona is an iOS app that stores information about a user's medications, including
-					the dosage, pharmacy, and doctor that prescribed the medication. Users can also
-					easily set alerts for your medication and quickly see the next time they need
-					to their medications.
-				</td>
-			</tr>
-			<tr>
-				<td class="project-title"><a href="walkingguild" target="_blank">The Walking Guild</a></td>
-				<td>
-					For the <i>Behavior Design for Better Health</i> class final project, I created a website
-					that prompts users to think about how much they walk every day and then sign a pledge
-					to walk at least 30 minutes a day. I worked with Andrew Martin and Brandon Ly.</td>
-			</tr>
-			<tr>
-				<td class="project-title"><a href="http://cs140.stanford.edu" target="_blank">Extending the Pintos OS</a></td>
-				<td>
-					Beginning with the <a href="http://pintos-os.org/" target="_blank">Pintos OS</a>, my team member Karanveer Mohan and I extended it to include priority thread scheduling that includes priority donation; a multilevel feedback queue scheduler similar to the <a class="fancybox" href="#bsd-info" target="_none">BSD scheduler</a>; APIs to allow user programs to run on the OS; virtual memory; and a file system to allow for directories, extensible files, caching, and fine-grained synchronization.
-				</td>
-				<div id="bsd-info">M. K. McKusick, K. Bostic, M. J. Karels, J. S. Quarterman, The Design and Implementation of the 4.4BSD Operating System. Addison-Wesley, 1996.</div>
-			</tr>
-		</table>
+	<div class="main">
+		<div class="header">
+			<h1>Catherine Lu</h1>
+			<div class="outgoing-links">
+				<div>
+					<a href="http://www.linkedin.com/in/catherineglu" target="_blank">
+						<i class="fa fa-3x fa-linkedin-square"></i>
+					</a>
+				</div>
+				<div>
+					<a href="mailto:me@cath.lu">
+						<i class="fa fa-3x fa-envelope-square"></i>
+					</a>
+				</div>
+				<div>
+					<a href="https://www.facebook.com/catherine.g.lu" target="_blank">
+						<i class="fa fa-3x fa-facebook-square"></i>
+					</a>
+				</div>
+			</div>
 		</div>
-		<!-- /Projects -->
+		<div class="about-me">
+			<h2>About Me</h2>
+			<p>
+				Hi there! I'm Catherine. I graduated in June 2014 with my bachelor's in computer science from Stanford (specializing in biocomputation), and I'll be graduating soon with my master's in computer science (specializing in AI).
+			</p>
+			<p>
+				I like to work on side-projects, and I'm particularly interested in learning more about traditional non-tech industries. Contact me if you want to chat!
+			</p>
+		</div>
+		<div class="projects">
+			<h2>Selected Projects</h2>
+			<table>
+				<tr>
+					<td class="project-title">
+						<a href="https://scoryst.com" target="_blank">Scoryst</a>
+					</td>
+					<td>
+						Scoryst is an online platform for homework and exam grading; it saves instructors time grading and gives detailed feedback to students. Scoryst has been used in 30+ courses and has graded 10,000+ submissions.
+					</td>
+				</tr>
+				<tr>
+					<td class="project-title">
+						<a href="http://freefoodstanford.com" target="_blank">Free Food @ Stanford</a>
+					</td>
+					<td>
+						Free Food @ Stanford lists events going on around Stanford that provide free food. Using a trained Naive Bayes Multinomial classifier, it analyzes emails from relevant mailing lists and finds emails which announce events with free food. Then, it parses the location, date, time, and content from the emails and automatically posts them to the website.
+					</td>
+				</tr>
+				<tr>
+					<td class="project-title">
+						<a href="http://cath.lu/files/CS221-Project.pdf" target="_blank">Recognition of Online Handwritten Mathematical Expressions</a>
+					</td>
+					<td>
+						For our final project in Principles of Artificial Intelligence, my partner <a href="http://stanford.edu/~kvmohan/" target="_blank">Karanveer Mohan</a> and I created a system to change handwritten mathematical formulas and symbols into LaTeX. If you're curious, you can try out our recognition system <a href="http://cs221.herokuapp.com/" target="_blank">here</a>.
+					</td>
+				</tr>
+				<tr>
+					<td class="project-title">
+						<a href="walkingguild" target="_blank">The Walking Guild</a>
+					</td>
+					<td>
+						I was fortunate enough to get into <i>Behavior Design for Better Health</i>, <a href="http://www.bjfogg.com/" target="_blank">BJ Fogg's</a> 2012 behavior design class (read about his 2007 class featured in the <a href="http://www.nytimes.com/2011/05/08/technology/08class.html" target="_blank">New York Times</a>). For the final project, I created a website that prompts users to think about how much they walk every day.
+					</td>
+				</tr>
+			</table>
+		</div>
 	</div>
-	</div>
-	<!-- /Work -->
-
-	<!-- Contact -->
-	<div class="section" id="contact">
-	<h1>contact me</h1>
-	<a class="icon" href="http://www.linkedin.com/pub/catherine-lu/2b/659/91a" target="_blank"><i class="fa fa-linkedin-square fa-2x"></i></a>
-	<a class="icon" href="https://www.facebook.com/catherine.g.lu" target="_blank"><i class="fa fa-facebook-square fa-2x"></i></a>
-	<!-- Form -->
-	<form name="contact-form" id="contact-form" action="" method="post">
-	<p class="name">
-		<label for="name">Name</label>
-		<input type="text" name="name" id="name" class="clear-value"/>
-	</p>
-	<p class="email">
-		<label for="email" id="email-label">Email</label>
-		<input type="text" name="email" id="email" class="clear-value"/>
-	</p>
-	<p class="text">
-		<textarea name="text" class="clear-value"></textarea>
-	</p>
-	<p class="submit">
-		<input type="submit" value="Submit" />
-	</p>
-	</form>
-	<!-- /Form -->
-	<div id="results"></div>
-	</div>
-	<!-- /Contact -->
-
-	<!-- Footer -->
-	<div class="section" id="footer">
-	&copy; Copyright Catherine Lu
-	</div>
-	<!-- /Footer -->
 </body>
 </html>
