@@ -162,3 +162,56 @@ td {
 
 	text-align: center;
 }
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media screen and (max-device-width : 480px) {
+	h1 {
+		font-size: 3.5em;
+	}
+
+	body {
+		width: 100%;
+		min-width: 100%;
+		font-size: 1.5em;
+	}
+
+	.main {
+		width: 100%;
+	}
+
+	h2 {
+		font-size: 2em;
+	}
+
+	.about-links {
+		width: 100%;
+		margin-bottom: 4em;
+	}
+
+	.outgoing-links {
+		font-size: 3em;
+	}
+
+	td {
+		width: 70%;
+	}
+
+	.project-title {
+		font-size: 2em;
+		width: 30%;
+	}
+
+	#linked-in {
+		float: left;
+	}
+
+	#email {
+		float: right;
+	}
+
+	#facebook {
+		display: block;
+		margin: 0 auto;
+	}
+}
