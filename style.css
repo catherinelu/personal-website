@@ -3,8 +3,7 @@ body {
 	font-weight: 300;
 	font-size: 18px;
 	background-color: #f7f4f2;
-	min-width: 850px;
-	margin: 40px 0;
+	padding: 40px;
 }
 
 h1 {
@@ -33,7 +32,7 @@ hr {
 }
 
 .main {
-	width: 800px;
+	max-width: 800px;
 	margin: 0 auto;
 }
 
@@ -167,26 +166,27 @@ td {
 /* Smartphones (portrait and landscape) ----------- */
 @media screen and (max-device-width : 480px) {
 	h1 {
-		font-size: 3.5em;
+		font-size: 2.5em;
 	}
 
 	body {
 		width: 100%;
-		min-width: 100%;
-		font-size: 1.5em;
+    min-width: 250px;
+		font-size: 1em;
+    padding: 0;
 	}
 
 	.main {
 		width: 90%;
-		padding: 2em;
 	}
 
 	h2 {
-		font-size: 2em;
+		font-size: 1.5em;
 	}
 
 	.about-links {
 		width: 100%;
+    min-width: 100%;
 		margin-bottom: 4em;
 	}
 
@@ -194,13 +194,9 @@ td {
 		font-size: 3em;
 	}
 
-	td {
-		width: 70%;
-	}
-
-	.project-title {
-		font-size: 1.7em;
-		width: 30%;
+	.work-title {
+		font-size: 1em;
+		width: 10%;
 	}
 
 	#linked-in {
