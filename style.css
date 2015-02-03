@@ -59,11 +59,11 @@ h1 {
 	font-size: 14px;
 }
 
-.projects, .about-me {
+.work, .about-me {
 	margin-top: 40px;
 }
 
-.project-title {
+.work-title {
 	font-weight: 500;
 	font-size: 20px;
 	width: 180px;
